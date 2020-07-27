@@ -48,6 +48,8 @@
 
         <!-- Import the CDI API, we use provided scope as the API is included in
             JBoss EAP -->
+        
+        
         <dependency>
             <groupId>jakarta.enterprise</groupId>
             <artifactId>jakarta.enterprise.cdi-api</artifactId>
@@ -62,6 +64,14 @@
         </dependency>
 
         <!-- Now we declare any tools needed -->
+        
+         <!-- Marc added https://mvnrepository.com/artifact/com.dynatrace.oneagent.sdk.java/oneagent-sdk  -->    
+        <dependency>
+                  <groupId>com.dynatrace.oneagent.sdk.java</groupId>
+                  <artifactId>oneagent-sdk</artifactId>
+                  <version>1.7.0</version>
+                  <scope>compile</scope>
+        </dependency>
 
         <!-- Annotation processor to generate the JPA metamodel classes for
             typesafe criteria queries -->
